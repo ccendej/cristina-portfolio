@@ -9,8 +9,6 @@
 
   --sage: #7a8068;
   --taupe: #b9aa9a;
-
-  --max-width: 1200px;
 }
 
 html {
@@ -20,38 +18,20 @@ html {
 body {
   background: var(--background);
   color: var(--text);
-  font-family: var(--font-body);
   margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-heading);
-  font-weight: 500;
-}
-
-section {
-  padding: 8rem 2rem;
-}
-
-.container {
-  max-width: var(--max-width);
-  margin: auto;
-}
-
-.font-heading {
-  font-family: var(--font-heading);
-}
-
-.font-body {
+  line-height: 1.6;
   font-family: var(--font-body);
+}
+
+.container-custom {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 2rem;
 }
 
 .eyebrow {
-  letter-spacing: 0.3em;
   text-transform: uppercase;
-  font-size: 0.75rem;
+  letter-spacing: .35em;
+  font-size: .75rem;
   color: var(--text-light);
 }
