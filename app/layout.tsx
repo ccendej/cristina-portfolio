@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
+import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -16,7 +17,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Cristina Cendejas",
   description:
-    "Technical Project Manager building trust through technology, leadership, and human connection.",
+    "Technical Project Manager, Yoga Teacher, and Community Builder creating environments where people, ideas, and technology come together to do their best work.",
 };
 
 export default function RootLayout({
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${cormorant.variable}`}>
+        <Navbar />
         {children}
       </body>
     </html>
