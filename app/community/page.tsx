@@ -11,7 +11,7 @@ export default function CommunityPage() {
           className="max-w-4xl text-5xl md:text-7xl font-medium tracking-tight"
           style={{ fontFamily: "var(--font-heading)" }}
         >
-          Leadership extends beyond the workplace.
+          Leadership beyond the workplace.
         </h1>
 
         <p className="mt-8 max-w-2xl text-lg leading-8 text-neutral-600">
@@ -29,7 +29,7 @@ export default function CommunityPage() {
               className="mt-4 text-4xl"
               style={{ fontFamily: "var(--font-heading)" }}
             >
-              Yoga
+              Yoga & Fitness
             </h2>
 
             <p className="mt-5 max-w-2xl leading-7 text-neutral-600">
@@ -38,6 +38,11 @@ export default function CommunityPage() {
               strengthened the way I guide groups, communicate clearly, and
               create environments where people feel comfortable being present.
             </p>
+
+  <p className="mt-5 max-w-2xl leading-7 text-neutral-600">
+    I'm continuing to grow as an instructor and am currently working
+    toward my ACE Group Fitness Instructor certification.
+  </p>
           </section>
 
           <section>
@@ -72,8 +77,8 @@ export default function CommunityPage() {
             </h2>
 
             <p className="mt-5 max-w-2xl leading-7 text-neutral-600">
-              I&apos;m expanding my experience into event planning and
-              community-centered experiences — another way to bring people
+              I'm expanding my experience into event planning and
+              community-centered experiences, another way to bring people
               together intentionally.
             </p>
           </section>

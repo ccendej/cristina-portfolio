@@ -1,34 +1,34 @@
+import Link from "next/link";
 import Container from "../ui/Container";
 import Eyebrow from "../ui/Eyebrow";
-import Link from "next/link";
 
 export default function Community() {
   return (
-    <section className="border-t border-black/10 py-24 md:py-32">
+    <section className="bg-[var(--espresso)] py-24 md:py-32">
       <Container>
         <Eyebrow>Beyond Technology</Eyebrow>
 
-        <div className="grid gap-12 md:grid-cols-[1fr_1.2fr] md:gap-20">
+        <div className="mt-6 grid gap-12 md:grid-cols-[1fr_1.1fr] md:gap-20">
           <h2
-            className="text-4xl leading-tight md:text-5xl"
+            className="max-w-3xl text-5xl leading-[1.05] tracking-tight text-[var(--cream)] md:text-6xl"
             style={{ fontFamily: "var(--font-heading)" }}
           >
-            Teaching, mentoring, and bringing people together.
+            Leadership beyond the workplace.
           </h2>
 
           <div>
-            <p className="text-lg leading-8 text-neutral-600">
-              My work outside technology has shaped the way I lead within it.
-              From five years of mentorship to teaching yoga and exploring
-              event planning, I&apos;m continually drawn to creating spaces
-              where people can connect and grow.
+            <p className="max-w-2xl text-lg leading-8 text-[var(--sand)]">
+              Teaching yoga and five years of mentoring have shaped how I
+              listen, communicate, and create space for others to grow. I&apos;m
+              continuing to develop as an instructor while exploring new ways
+              to bring people together through community and events.
             </p>
 
             <Link
               href="/community"
-              className="mt-8 inline-block border-b border-black pb-1 transition-opacity hover:opacity-50"
+              className="mt-8 inline-block border-b border-[var(--sand)] pb-1 text-[var(--cream)] transition-opacity hover:opacity-60"
             >
-              Explore community work →
+              More beyond technology →
             </Link>
           </div>
         </div>
