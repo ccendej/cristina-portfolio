@@ -3,7 +3,7 @@ import Eyebrow from "@/components/ui/Eyebrow";
 
 export default function CommunityPage() {
   return (
-    <main className="min-h-screen pt-32 pb-24">
+    <main className="pt-16 pb-24 md:pt-20 md:pb-32">
       <Container>
         <Eyebrow>Community</Eyebrow>
 
@@ -22,7 +22,7 @@ export default function CommunityPage() {
         <div className="mt-24 space-y-20">
           <section>
             <p className="text-sm uppercase tracking-widest text-neutral-500">
-              Teaching
+              Teaching 
             </p>
 
             <h2

@@ -1,57 +1,69 @@
+import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
 
 export default function WorkPage() {
   return (
-    <main className="min-h-screen pt-32 pb-24">
+    <main className="bg-[var(--porcelain)] pt-16 pb-24 md:pt-20 md:pb-32">
       <Container>
         <Eyebrow>Selected Work</Eyebrow>
 
         <h1
-          className="text-5xl md:text-7xl font-medium tracking-tight"
+          className="max-w-5xl text-5xl leading-[1.05] tracking-tight text-[var(--text-dark)] md:text-7xl"
           style={{ fontFamily: "var(--font-heading)" }}
         >
           Building better systems through people, process, and technology.
         </h1>
 
-        <p className="mt-8 max-w-2xl text-lg leading-8 text-neutral-600">
-          A collection of projects that reflect how I approach technical
-          delivery, collaboration, problem solving, and continuous improvement.
+        <p className="mt-8 max-w-3xl text-lg leading-8 text-[var(--text-soft)]">
+          A selection of projects that show how I bring structure to complex
+          work, collaborate across teams, and move technical projects forward.
         </p>
 
-        <div className="mt-24 space-y-16">
-          <article className="border-t border-black/10 pt-8">
-            <p className="text-sm text-neutral-500">
-              Technical Project Management
+        <div className="mt-20">
+          <article className="border-t border-[var(--accent)]/25 py-12 md:py-16">
+            <p className="text-xs uppercase tracking-[0.25em] text-[var(--accent)]">
+              Application Modernization
             </p>
 
-            <h2
-              className="mt-3 text-3xl md:text-4xl"
-              style={{ fontFamily: "var(--font-heading)" }}
-            >
-              Improving digital products and developer workflows
-            </h2>
+            <div className="mt-6 grid gap-10 md:grid-cols-[1.4fr_0.8fr] md:gap-20">
+              <div>
+                <h2
+                  className="max-w-3xl text-4xl leading-tight text-[var(--text-dark)] md:text-5xl"
+                  style={{ fontFamily: "var(--font-heading)" }}
+                >
+                  Bringing structure and momentum to a critical system
+                  migration.
+                </h2>
 
-            <p className="mt-4 max-w-2xl text-neutral-600 leading-7">
-              Case study coming soon.
-            </p>
-          </article>
+                <p className="mt-6 max-w-2xl text-lg leading-8 text-[var(--text-soft)]">
+                  Leading cross-functional coordination, testing,
+                  documentation, and delivery for the modernization of a
+                  centralized payment application.
+                </p>
 
-          <article className="border-t border-black/10 pt-8">
-            <p className="text-sm text-neutral-500">
-              Troubleshooting & Product Support
-            </p>
+                <Link
+                  href="/work/payment-modernization"
+                  className="mt-8 inline-block border-b border-[var(--text-dark)] pb-1 text-sm transition-opacity hover:opacity-50"
+                >
+                  View project →
+                </Link>
+              </div>
 
-            <h2
-              className="mt-3 text-3xl md:text-4xl"
-              style={{ fontFamily: "var(--font-heading)" }}
-            >
-              Creating clarity between users and technical teams
-            </h2>
+              <div className="md:pt-2">
+                <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent)]">
+                  Focus
+                </p>
 
-            <p className="mt-4 max-w-2xl text-neutral-600 leading-7">
-              Case study coming soon.
-            </p>
+                <div className="mt-5 space-y-3 text-sm text-[var(--text-soft)]">
+                  <p>Technical Project Management</p>
+                  <p>Application Modernization</p>
+                  <p>Cross-Functional Leadership</p>
+                  <p>QA &amp; Testing</p>
+                  <p>Vendor Coordination</p>
+                </div>
+              </div>
+            </div>
           </article>
         </div>
       </Container>

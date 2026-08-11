@@ -4,7 +4,7 @@ import Eyebrow from "../ui/Eyebrow";
 
 export default function Journey() {
   return (
-    <section className="bg-[var(--cream)] py-24 md:py-32">
+    <section className="border-t border-[var(--accent)]/25 bg-[var(--porcelain)] py-16 md:py-20">
       <Container>
         <Eyebrow>My Journey</Eyebrow>
 
@@ -17,7 +17,7 @@ export default function Journey() {
           </h2>
 
           <div>
-            <p className="max-w-2xl text-lg leading-8 text-[var(--taupe)]">
+            <p className="max-w-2xl text-lg leading-8 text-[var(--text-soft)]">
               From chemistry labs to five years working across technology roles,
               my path has been shaped by curiosity, challenge, and a desire to
               keep learning.

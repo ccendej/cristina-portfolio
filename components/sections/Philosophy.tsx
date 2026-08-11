@@ -3,25 +3,25 @@ import Eyebrow from "../ui/Eyebrow";
 
 export default function Philosophy() {
   return (
-    <section
-      id="philosophy"
-      className="bg-[var(--sand)] py-24 md:py-32"
-    >
+<section
+  id="philosophy"
+  className="border-t border-[var(--accent)]/20 bg-[var(--porcelain)] py-16 md:py-20"
+>
       <Container>
-        <div className="grid gap-12 md:grid-cols-[0.8fr_1.4fr] md:gap-24">
+        <div className="md:pl-12">
           <div>
             <Eyebrow>What I Believe</Eyebrow>
           </div>
 
           <div>
             <h2
-              className="max-w-3xl text-5xl leading-[1.05] tracking-tight md:text-6xl"
-              style={{ fontFamily: "var(--font-heading)" }}
-            >
-              Great work begins with trust.
-            </h2>
+  className="text-4xl leading-tight md:text-5xl"
+  style={{ fontFamily: "var(--font-heading)" }}
+>
+  Great work begins with trust.
+</h2>
 
-            <div className="mt-10 max-w-2xl space-y-6 text-lg leading-8 text-[var(--taupe)]">
+            <div className="mt-10 max-w-2xl space-y-7 text-[20px] leading-[1.7] text-[var(--text-soft)] md:text-[21px]">
               <p>
                 I believe people do their best work when they feel heard,
                 supported, and connected.
@@ -35,9 +35,9 @@ export default function Philosophy() {
               </p>
 
               <p>
-                Success, to me, means creating connection and knowing that I
-                added value to the people, the process, and the work we created
-                together.
+                Success, to me, means creating meaningful connections and knowing
+                that I added value to the people, the process, and the work we 
+                created together.
               </p>
             </div>
           </div>
