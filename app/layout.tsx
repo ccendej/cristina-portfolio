@@ -27,7 +27,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${cormorant.variable}`}>
+      <body
+        className={`${inter.variable} ${cormorant.variable}`}
+        style={{
+          backgroundImage: `
+            linear-gradient(
+              rgba(247, 243, 237, 0.28),
+              rgba(247, 243, 237, 0.28)
+            ),
+            url('/pictures/background.jpg')
+          `,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <Navbar />
         {children}
       </body>

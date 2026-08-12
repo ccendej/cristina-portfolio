@@ -3,7 +3,7 @@ import Eyebrow from "@/components/ui/Eyebrow";
 
 export default function JourneyPage() {
   return (
-    <main className="min-h-screen bg-[var(--cream)] pt-32 pb-24">
+    <main  className="bg-[rgba(247,243,237,0.57)] pt-16 pb-24 md:pt-20 md:pb-32">
       <Container>
         <Eyebrow>My Journey</Eyebrow>
 
@@ -55,7 +55,7 @@ export default function JourneyPage() {
 
               <p className="mt-4 max-w-2xl leading-7 text-[var(--taupe)]">
                 Over the past five years, I&apos;ve grown through multiple roles
-                in technology with the State, building experience across project
+                in technology, building experience across project
                 delivery, web applications, testing, troubleshooting, and
                 collaboration with technical teams.
               </p>

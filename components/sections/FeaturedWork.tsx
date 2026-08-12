@@ -3,7 +3,10 @@ import Eyebrow from "../ui/Eyebrow";
 
 export default function FeaturedWork() {
   return (
-    <section id="work" className="border-t border-black/10 py-24 md:py-32">
+    <section
+      id="work"
+       className="bg-[rgba(247,243,237,0.56)] pt-16 pb-24 md:pt-20 md:pb-32">
+
       <Container>
         <Eyebrow>Selected Work</Eyebrow>
 

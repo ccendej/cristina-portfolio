@@ -3,7 +3,12 @@ import Eyebrow from "../ui/Eyebrow";
 
 export default function Community() {
   return (
-    <section className="border-t border-[var(--accent)]/25 bg-[var(--porcelain)] py-16 md:py-20">
+    <section
+      className="border-t border-[var(--accent)]/20 py-14 md:py-16"
+      style={{
+        backgroundColor: "rgba(247, 243, 237, 0.58)",
+      }}
+    >
       <Container>
         <Eyebrow>Beyond Technology</Eyebrow>
 
@@ -18,11 +23,18 @@ export default function Community() {
           <div>
             <p className="max-w-2xl text-lg leading-8 text-[var(--text-dark)]/75">
               Teaching yoga and five years of mentoring have shaped how I
-              listen, communicate, and create space for others to grow. I'm
+              listen, communicate, and create space for others to grow. I&apos;m
               continuing to develop as an instructor while exploring new ways
               to bring people together through community and events.
             </p>
 
+            <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-xs uppercase tracking-[0.2em] text-[var(--accent)]">
+              <span>Teaching</span>
+              <span aria-hidden="true">·</span>
+              <span>Mentorship</span>
+              <span aria-hidden="true">·</span>
+              <span>Community</span>
+            </div>
           </div>
         </div>
       </Container>

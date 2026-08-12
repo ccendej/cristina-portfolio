@@ -4,7 +4,7 @@ import Eyebrow from "@/components/ui/Eyebrow";
 
 export default function ElectronicDataInterchangePage() {
   return (
-    <main className="bg-[var(--porcelain)] pt-16 pb-24 md:pt-20 md:pb-32">
+    <main className="bg-[rgba(247,243,237,0.56)] pt-16 pb-24 md:pt-20 md:pb-32">
       <Container>
         <Link
           href="/work"

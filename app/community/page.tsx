@@ -3,7 +3,7 @@ import Eyebrow from "@/components/ui/Eyebrow";
 
 export default function CommunityPage() {
   return (
-    <main className="pt-16 pb-24 md:pt-20 md:pb-32">
+    <main  className="bg-[rgba(247,243,237,0.57)] pt-16 pb-24 md:pt-20 md:pb-32">
       <Container>
         <Eyebrow>Community</Eyebrow>
 
@@ -20,34 +20,39 @@ export default function CommunityPage() {
         </p>
 
         <div className="mt-24 space-y-20">
-          <section>
-            <p className="text-sm uppercase tracking-widest text-neutral-500">
-              Teaching 
-            </p>
+ <section>
+  <p className="text-sm uppercase tracking-widest text-neutral-500">
+    Teaching &amp; Fitness
+  </p>
 
-            <h2
-              className="mt-4 text-4xl"
-              style={{ fontFamily: "var(--font-heading)" }}
-            >
-              Yoga & Fitness
-            </h2>
-
-            <p className="mt-5 max-w-2xl leading-7 text-neutral-600">
-              Becoming a yoga teacher began as a way to better understand
-              myself and find confidence in my own voice. Teaching has
-              strengthened the way I guide groups, communicate clearly, and
-              create environments where people feel comfortable being present.
-            </p>
+  <h2
+    className="mt-4 text-4xl"
+    style={{ fontFamily: "var(--font-heading)" }}
+  >
+    Yoga &amp; Fitness
+  </h2>
 
   <p className="mt-5 max-w-2xl leading-7 text-neutral-600">
-    I'm continuing to grow as an instructor and am currently working
-    toward my ACE Group Fitness Instructor certification.
+    Becoming a yoga teacher began as a way to better understand myself and
+    find confidence in my own voice. Teaching has strengthened the way I guide
+    groups, communicate clearly, and create environments where people feel
+    comfortable being present.
   </p>
-          </section>
 
+  <div className="mt-6">
+    <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent)]">
+      Credentials
+    </p>
+
+    <div className="mt-3 space-y-1 text-sm text-[var(--text-soft)]">
+      <p>Yoga Alliance Registered Yoga Teacher (RYT 200)</p>
+      <p>ACE Group Fitness Instructor — In Progress</p>
+    </div>
+  </div>
+</section>
           <section>
             <p className="text-sm uppercase tracking-widest text-neutral-500">
-              Five Years
+              Five Years of Mentorship
             </p>
 
             <h2
@@ -58,9 +63,7 @@ export default function CommunityPage() {
             </h2>
 
             <p className="mt-5 max-w-2xl leading-7 text-neutral-600">
-              After benefiting from mentorship myself, I spent five years
-              helping students navigate college and career decisions by first
-              understanding who they were and what mattered to them.
+              Mentorship had a meaningful impact on my own journey, which inspired me to spend five years supporting students through college and career decisions. The experience taught me how to listen, guide, and help others find a path that felt right for them.
             </p>
           </section>
 
