@@ -4,7 +4,7 @@ import Eyebrow from "../ui/Eyebrow";
 export default function Community() {
   return (
     <section
-      className="border-t border-[var(--accent)]/20 py-14 md:py-16"
+      className="border-t border-[var(--accent)]/20 py-12 md:py-16"
       style={{
         backgroundColor: "rgba(247, 243, 237, 0.58)",
       }}
@@ -12,23 +12,23 @@ export default function Community() {
       <Container>
         <Eyebrow>Beyond Technology</Eyebrow>
 
-        <div className="mt-6 grid gap-12 md:grid-cols-[1fr_1.1fr] md:gap-20">
+        <div className="mt-5 grid gap-10 md:mt-6 md:grid-cols-[1fr_1.1fr] md:gap-20">
           <h2
-            className="max-w-3xl text-5xl leading-[1.05] tracking-tight text-[var(--text-dark)] md:text-6xl"
+            className="max-w-3xl text-4xl leading-[1.08] tracking-tight text-[var(--text-dark)] md:text-6xl"
             style={{ fontFamily: "var(--font-heading)" }}
           >
             Leadership beyond the workplace.
           </h2>
 
           <div>
-            <p className="max-w-2xl text-lg leading-8 text-[var(--text-dark)]/75">
+            <p className="max-w-2xl text-base leading-7 text-[var(--text-dark)]/75 md:text-lg md:leading-8">
               Teaching yoga and five years of mentoring have shaped how I
               listen, communicate, and create space for others to grow. I&apos;m
               continuing to develop as an instructor while exploring new ways
               to bring people together through community and events.
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-xs uppercase tracking-[0.2em] text-[var(--accent)]">
+            <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3 text-xs uppercase tracking-[0.2em] text-[var(--accent)] md:mt-10 md:gap-x-6">
               <span>Teaching</span>
               <span aria-hidden="true">·</span>
               <span>Mentorship</span>

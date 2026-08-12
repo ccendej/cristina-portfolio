@@ -3,52 +3,54 @@ import Eyebrow from "@/components/ui/Eyebrow";
 
 export default function ContactPage() {
   return (
-    <main
-  className="min-h-[calc(100vh-78px)] pt-16 pb-24 md:pt-20 md:pb-32"
-      style={{
-        backgroundColor: "rgba(247, 243, 237, 0.57)",
-      }}
-    >
+<main
+  className="flex min-h-[calc(100svh-78px)] items-center py-10 md:min-h-[calc(100vh-78px)] md:py-20"
+  style={{
+    backgroundColor: "rgba(247, 243, 237, 0.57)",
+  }}
+>
       <Container>
-        <Eyebrow>Contact</Eyebrow>
+        <div className="mx-auto max-w-4xl text-center">
+          <Eyebrow>Contact</Eyebrow>
 
-        <h1
-          className="max-w-4xl text-5xl font-medium tracking-tight md:text-7xl"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
-          Let&apos;s build something meaningful.
-        </h1>
-
-        <p className="mt-10 max-w-2xl text-lg leading-8 text-[var(--text-soft)]">
-          I&apos;m always interested in thoughtful conversations about
-          technology, leadership, community, and meaningful experiences.
-        </p>
-
-        <div className="mt-12 flex flex-wrap gap-8">
-          <a
-            href="mailto:cendejasc@gmail.com"
-            className="border-b border-black pb-1 transition-opacity hover:opacity-50"
+          <h1
+            className="mt-3 text-[40px] font-medium leading-[1.02] tracking-tight text-[#302923] md:mt-4 md:text-7xl"
+            style={{ fontFamily: "var(--font-heading)" }}
           >
-            Email: CendejasC@gmail.com
-          </a>
+            Let&apos;s build something meaningful.
+          </h1>
 
-          <a
-            href="https://www.linkedin.com/in/cristinacendejas"
-            target="_blank"
-            rel="noreferrer"
-            className="border-b border-black pb-1 transition-opacity hover:opacity-50"
-          >
-            LinkedIn
-          </a>
+          <p className="mx-auto mt-6 max-w-[340px] text-base leading-7 text-[var(--text-soft)] md:mt-8 md:max-w-2xl md:text-lg md:leading-8">
+            I&apos;m always interested in thoughtful conversations about
+            technology, leadership, community, and meaningful experiences.
+          </p>
 
-          <a
-            href="https://github.com/ccendej"
-            target="_blank"
-            rel="noreferrer"
-            className="border-b border-black pb-1 transition-opacity hover:opacity-50"
-          >
-            GitHub
-          </a>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm md:mt-12 md:gap-x-8 md:gap-y-4">
+            <a
+              href="mailto:cendejasc@gmail.com"
+              className="transition-opacity hover:opacity-60"
+            >
+              Email: CendejasC@gmail.com
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/cristinacendejas"
+              target="_blank"
+              rel="noreferrer"
+              className="transition-opacity hover:opacity-60"
+            >
+              LinkedIn
+            </a>
+
+            <a
+              href="https://github.com/ccendej"
+              target="_blank"
+              rel="noreferrer"
+              className="transition-opacity hover:opacity-60"
+            >
+              GitHub
+            </a>
+          </div>
         </div>
       </Container>
     </main>

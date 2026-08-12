@@ -6,8 +6,18 @@ export default function Heading({
   children,
 }: HeadingProps) {
   return (
-    <h2 className="font-heading text-5xl md:text-6xl leading-tight tracking-tight">
+    <h1
+      style={{ fontFamily: "var(--font-heading)" }}
+      className="
+        text-4xl
+        md:text-7xl
+        lg:text-8xl
+        leading-[1.05]
+        tracking-tight
+        font-medium
+      "
+    >
       {children}
-    </h2>
+    </h1>
   );
 }

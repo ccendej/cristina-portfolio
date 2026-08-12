@@ -3,18 +3,19 @@ import Eyebrow from "../ui/Eyebrow";
 
 export default function PhilosophyTeaser() {
   return (
-    <section  className="bg-[rgba(247,243,237,0.57)] pt-16 pb-24 md:pt-20 md:pb-32">
+<section
+  id="philosophy"
+  className="border-t border-black/10 bg-[#E2D9CE] py-14 md:py-16"
+>
       <Container>
-        <div className="mx-auto max-w-6xl">
+        <div className="text-center">
           <Eyebrow>What I Believe</Eyebrow>
-
-          <h2
-            className="mt-6 max-w-3xl text-4xl leading-[1.08] tracking-tight text-[var(--text-dark)] md:text-5xl"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
-            Great work begins with{" "}
-            <span className="italic">Trust.</span>
-          </h2>
+<h2
+  className="text-center text-4xl leading-tight text-[#302923] md:text-5xl lg:text-6xl"
+  style={{ fontFamily: "var(--font-heading)" }}
+>
+  Great work begins with <em>Trust.</em>
+</h2>
 
           <a
             href="/philosophy"
