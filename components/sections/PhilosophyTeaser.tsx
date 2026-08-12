@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "../ui/Container";
 import Eyebrow from "../ui/Eyebrow";
 
@@ -17,12 +18,12 @@ export default function PhilosophyTeaser() {
   Great work begins with <em>Trust.</em>
 </h2>
 
-          <a
-            href="/philosophy"
-            className="mt-7 inline-block text-sm uppercase tracking-[0.18em] text-[var(--olive)]"
-          >
-            Read my philosophy →
-          </a>
+<Link
+  href="/philosophy"
+  className="mt-7 inline-block text-sm uppercase tracking-[0.18em] text-[var(--olive)]"
+>
+  Read my philosophy →
+</Link>
         </div>
       </Container>
     </section>

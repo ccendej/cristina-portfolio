@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   basePath: isProd ? "/cristina-portfolio" : "",
   assetPrefix: isProd ? "/cristina-portfolio/" : "",
 
+  trailingSlash: true,
+
   images: {
     unoptimized: true,
   },
