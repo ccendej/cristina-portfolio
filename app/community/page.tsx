@@ -2,6 +2,9 @@ import Image from "next/image";
 import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
 
+const basePath =
+  process.env.NODE_ENV === "production" ? "/cristina-portfolio" : "";
+
 export default function CommunityPage() {
   return (
     <main className="bg-[rgba(247,243,237,0.57)] pt-12 pb-16 md:pt-20 md:pb-32">
@@ -107,7 +110,7 @@ export default function CommunityPage() {
             {/* GRADUATION PHOTO */}
             <div className="mx-auto w-full max-w-[280px] sm:max-w-[320px] lg:max-w-none">
               <Image
-                src="/pictures/community-graduation.jpeg"
+                src={`${basePath}/pictures/community-graduation.jpeg`}
                 alt="Celebrating a graduation"
                 width={1200}
                 height={1600}
@@ -120,7 +123,7 @@ export default function CommunityPage() {
             {/* YOGA CERTIFICATION PHOTO */}
             <div className="mx-auto w-full max-w-[280px] sm:max-w-[320px] lg:max-w-none">
               <Image
-                src="/pictures/yoga-certification.jpeg"
+                src={`${basePath}/pictures/yoga-certification.jpeg`}
                 alt="Completing my 200-hour yoga teacher training"
                 width={1200}
                 height={1600}

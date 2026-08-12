@@ -35,7 +35,7 @@ export default function RootLayout({
               rgba(247, 243, 237, 0.28),
               rgba(247, 243, 237, 0.28)
             ),
-            url('/pictures/background.jpg')
+            url('/cristina-portfolio/pictures/background.jpg')
           `,
           backgroundSize: "cover",
           backgroundPosition: "center",

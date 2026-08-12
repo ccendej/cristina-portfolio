@@ -28,7 +28,7 @@ export default function ContactPage() {
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm md:mt-12 md:gap-x-8 md:gap-y-4">
             <a
               href="mailto:cendejasc@gmail.com"
-              className="transition-opacity hover:opacity-60"
+              className="underline decoration-[var(--accent)]/40 underline-offset-4 transition-opacity hover:opacity-60"
             >
               Email: CendejasC@gmail.com
             </a>
@@ -37,7 +37,7 @@ export default function ContactPage() {
               href="https://www.linkedin.com/in/cristinacendejas"
               target="_blank"
               rel="noreferrer"
-              className="transition-opacity hover:opacity-60"
+              className="underline decoration-[var(--accent)]/40 underline-offset-4 transition-opacity hover:opacity-60"
             >
               LinkedIn
             </a>
@@ -46,7 +46,7 @@ export default function ContactPage() {
               href="https://github.com/ccendej"
               target="_blank"
               rel="noreferrer"
-              className="transition-opacity hover:opacity-60"
+              className="underline decoration-[var(--accent)]/40 underline-offset-4 transition-opacity hover:opacity-60"
             >
               GitHub
             </a>

@@ -2,6 +2,9 @@ import Image from "next/image";
 import Container from "../ui/Container";
 import Eyebrow from "../ui/Eyebrow";
 
+const basePath =
+  process.env.NODE_ENV === "production" ? "/cristina-portfolio" : "";
+
 export default function Philosophy() {
   return (
     <section
@@ -48,7 +51,7 @@ export default function Philosophy() {
             <div className="relative mx-auto w-full max-w-[420px] lg:max-w-none">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
-                  src="/pictures/yoga.jpeg"
+                  src={`${basePath}/pictures/yoga.jpeg`}
                   alt="Cristina practicing yoga in a studio"
                   fill
                   className="object-cover object-[center_58%]"
