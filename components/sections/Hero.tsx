@@ -3,7 +3,7 @@ import Eyebrow from "../ui/Eyebrow";
 
 export default function Hero() {
   return (
-    <section  className="bg-[rgba(247,243,237,0.50)] pt-16 pb-24 md:pt-20 md:pb-32">
+    <section  className="bg-[rgba(247,243,237,0.44)] pt-16 pb-24 md:pt-20 md:pb-32">
       <Container>
         <div className="flex min-h-[calc(100vh-78px)] flex-col items-center justify-center text-center">
           
