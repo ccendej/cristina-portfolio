@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Container from "@/components/ui/Container";
 import Eyebrow from "@/components/ui/Eyebrow";
 
@@ -5,6 +6,14 @@ export default function PaymentModernizationPage() {
   return (
     <main className="bg-[var(--porcelain)] pt-16 pb-24 md:pt-20 md:pb-32">
       <Container>
+
+        <Link
+          href="/work"
+          className="mb-12 inline-block text-sm text-[var(--text-soft)] transition-opacity hover:opacity-50"
+        >
+          ← Back to work
+        </Link>
+
         <Eyebrow>Application Modernization</Eyebrow>
 
         <h1
@@ -27,27 +36,21 @@ export default function PaymentModernizationPage() {
 
         <div className="mt-16 grid gap-10 border-y border-[var(--accent)]/25 py-10 md:grid-cols-3">
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent)]">
-              Role
-            </p>
+            <Eyebrow>Role</Eyebrow>
             <p className="mt-3 text-[var(--text-dark)]">
               Technical Project Manager
             </p>
           </div>
 
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent)]">
-              Focus
-            </p>
+            <Eyebrow>Focus</Eyebrow>
             <p className="mt-3 text-[var(--text-dark)]">
               Application Modernization
             </p>
           </div>
 
           <div>
-            <p className="text-xs uppercase tracking-[0.2em] text-[var(--accent)]">
-              Areas
-            </p>
+            <Eyebrow>Areas</Eyebrow>
             <p className="mt-3 text-[var(--text-dark)]">
               Testing · Documentation · Cross-Team Delivery
             </p>
@@ -56,11 +59,9 @@ export default function PaymentModernizationPage() {
 
         <section className="py-16 md:py-20">
           <div className="grid gap-10 md:grid-cols-[0.8fr_1.4fr] md:gap-20">
-            <div>
-              <Eyebrow>The Challenge</Eyebrow>
-            </div>
+            <Eyebrow>The Challenge</Eyebrow>
 
-            <div className="max-w-3xl space-y-6 text-[20px] leading-[1.7] text-[var(--text-soft)]">
+            <div className="max-w-3xl space-y-6 text-lg leading-8 text-[var(--text-soft)]">
               <p>
                 The modernization effort had been underway for several years
                 before I joined the project, with an approaching end-of-life
@@ -74,12 +75,12 @@ export default function PaymentModernizationPage() {
               </p>
 
               <p>
-                As I became more embedded with the development team, I also
+                As I became more embedded with the development team, I
                 identified a gap between some contracted work and the technical
                 needs being surfaced by developers.
               </p>
 
-              <p className="text-[var(--text-dark)]">
+              <p className="font-medium text-[var(--text-dark)]">
                 The challenge wasn&apos;t only completing a migration. We needed
                 a clearer way of working together.
               </p>
@@ -89,11 +90,9 @@ export default function PaymentModernizationPage() {
 
         <section className="py-16 md:py-20">
           <div className="grid gap-10 md:grid-cols-[0.8fr_1.4fr] md:gap-20">
-            <div>
-              <Eyebrow>My Role</Eyebrow>
-            </div>
+            <Eyebrow>My Role</Eyebrow>
 
-            <div className="max-w-3xl space-y-6 text-[20px] leading-[1.7] text-[var(--text-soft)]">
+            <div className="max-w-3xl space-y-6 text-lg leading-8 text-[var(--text-soft)]">
               <p>
                 As Technical Project Manager, I worked across developers,
                 vendors, QA, and the source systems that depended on the
@@ -120,111 +119,74 @@ export default function PaymentModernizationPage() {
           <Eyebrow>My Approach</Eyebrow>
 
           <div className="mt-10 grid gap-10 md:grid-cols-2">
-            <article className="border-t border-[var(--accent)]/25 pt-8">
+
+            <div>
               <h2
                 className="text-3xl text-[var(--text-dark)]"
                 style={{ fontFamily: "var(--font-heading)" }}
               >
                 Creating visibility
               </h2>
-
-              <p className="mt-5 leading-8 text-[var(--text-soft)]">
+              <p className="mt-4 leading-7 text-[var(--text-soft)]">
                 I created clearer plans and project visibility so each team
                 understood progress, dependencies, testing needs, and where the
                 project stood.
               </p>
-            </article>
+            </div>
 
-            <article className="border-t border-[var(--accent)]/25 pt-8">
+            <div>
               <h2
                 className="text-3xl text-[var(--text-dark)]"
                 style={{ fontFamily: "var(--font-heading)" }}
               >
                 Restructuring delivery
               </h2>
-
-              <p className="mt-5 leading-8 text-[var(--text-soft)]">
+              <p className="mt-4 leading-7 text-[var(--text-soft)]">
                 After surfacing concerns from the development team, I escalated
                 the delivery gap to management. The approach was restructured,
-                and an existing vendor was brought in to support frontend UI
-                work and component segmentation so backend developers could
-                remain focused on core migration work.
+                allowing vendor support to focus on frontend UI work and
+                component segmentation while backend developers concentrated on
+                core migration work.
               </p>
-            </article>
+            </div>
 
-            <article className="border-t border-[var(--accent)]/25 pt-8">
+            <div>
               <h2
                 className="text-3xl text-[var(--text-dark)]"
                 style={{ fontFamily: "var(--font-heading)" }}
               >
                 Building a testing strategy
               </h2>
-
-              <p className="mt-5 leading-8 text-[var(--text-soft)]">
+              <p className="mt-4 leading-7 text-[var(--text-soft)]">
                 With limited documentation and no established test plan, I
                 worked with the team to document application functionality,
                 develop testing plans, and conduct hands-on testing before
-                transitioning the application into formal QA validation.
+                formal QA validation.
               </p>
-            </article>
+            </div>
 
-            <article className="border-t border-[var(--accent)]/25 pt-8">
+            <div>
               <h2
                 className="text-3xl text-[var(--text-dark)]"
                 style={{ fontFamily: "var(--font-heading)" }}
               >
                 Connecting the teams
               </h2>
-
-              <p className="mt-5 leading-8 text-[var(--text-soft)]">
+              <p className="mt-4 leading-7 text-[var(--text-soft)]">
                 I coordinated across development, vendors, QA, and dependent
-                source systems to create a more collaborative working
-                environment with clearer expectations and stronger
-                accountability.
+                source systems to create clearer expectations, stronger
+                communication, and greater accountability.
               </p>
-            </article>
+            </div>
+
           </div>
         </section>
 
         <section className="py-16 md:py-20">
           <div className="grid gap-10 md:grid-cols-[0.8fr_1.4fr] md:gap-20">
-            <div>
-              <Eyebrow>Collaboration</Eyebrow>
-            </div>
+            <Eyebrow>The Outcome</Eyebrow>
 
-            <div className="max-w-3xl space-y-6 text-[20px] leading-[1.7] text-[var(--text-soft)]">
-              <p>
-                One of the largest changes wasn&apos;t technical, it was how
-                the teams worked together.
-              </p>
-
-              <p>
-                Early meetings had limited cross-team discussion. As we created
-                greater visibility and clearer expectations around testing,
-                dependencies, and ownership, those conversations changed.
-              </p>
-
-              <p>
-                Teams began proactively raising potential issues, discussing
-                what needed to be tested, identifying dependencies, and
-                communicating concerns earlier.
-              </p>
-
-              <p className="text-[var(--text-dark)]">
-                The project became more collaborative, and with that came
-                greater accountability across the teams involved.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-16 md:py-20">
-          <div className="grid gap-10 md:grid-cols-[0.8fr_1.4fr] md:gap-20">
-            <div>
-              <Eyebrow>The Outcome</Eyebrow>
-            </div>
-
-            <div className="max-w-3xl space-y-6 text-[20px] leading-[1.7] text-[var(--text-soft)]">
+            <div className="max-w-3xl space-y-6 text-lg leading-8 text-[var(--text-soft)]">
               <p>
                 The project moved from fragmented communication and limited
                 testing structure toward a coordinated delivery model with
@@ -245,7 +207,7 @@ export default function PaymentModernizationPage() {
                 launch.
               </p>
 
-              <p className="text-[var(--text-dark)]">
+              <p className="font-medium text-[var(--text-dark)]">
                 The modernization moves the organization away from end-of-life
                 technology and toward a more secure and supportable platform.
               </p>
@@ -253,22 +215,21 @@ export default function PaymentModernizationPage() {
           </div>
         </section>
 
-        <section className="py-16 md:py-20">
+        <section className="pt-16 md:pt-20">
           <div className="grid gap-10 md:grid-cols-[0.8fr_1.4fr] md:gap-20">
-            <div>
-              <Eyebrow>What I Took From It</Eyebrow>
-            </div>
+            <Eyebrow>What I Took From It</Eyebrow>
 
-            <blockquote
-              className="max-w-3xl text-4xl leading-tight text-[var(--text-dark)] md:text-5xl"
+            <p
+              className="max-w-3xl text-3xl leading-tight text-[var(--text-dark)] md:text-4xl"
               style={{ fontFamily: "var(--font-heading)" }}
             >
               Technical challenges aren&apos;t solved by technology alone.
               Creating clarity, trust, and communication between the people
               doing the work can be just as important as the solution itself.
-            </blockquote>
+            </p>
           </div>
         </section>
+
       </Container>
     </main>
   );
