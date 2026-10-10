@@ -78,7 +78,7 @@ export default function CommunityPage() {
 
                 <div className="mt-3 space-y-1 text-sm text-[var(--text-soft)]">
                   <p>Yoga Alliance Registered Yoga Teacher (RYT 200)</p>
-                  <p>ACE Group Fitness Instructor — In Progress</p>
+                  <p>ACE Group Fitness Instructor</p>
                 </div>
               </div>
             </section>
